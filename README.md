@@ -28,8 +28,8 @@ python mp_script.py
 |  Arguments   | Details  | Default value | 
 |  ----  | ----  | ----  |
 | ts  | percentile from which tax data are considered reliable (trustable span); min:0, max:0.98 | 0 |
-| inccol  | income column in the survey | income |
-| weightcol | weight column in the survey | weight |
+| inccol  | income column in the survey | "income" |
+| weightcol | weight column in the survey | "weight" |
 | gamma | distance parameter gamma (see paper) | 3 |
 | beta | distance parameter beta (see paper) | 30 |
 | other_mp | list of additional percentiles to be included among candidate merging points | empty list |
