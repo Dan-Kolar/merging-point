@@ -28,7 +28,7 @@ def mp(tax,survey,pop_size=None,ts=0,inccol="income",weightcol="weight",gamma=3,
     """
     This function implements the merging point algorithm in the Wealth Survey Calibration paper by Kolar. 
     It returns the candidate merging points (df_mp_c) and a dataframe that serves as input for the graphs (grid_df).
-    Required inputs are the tax & survey datasets with column names as in the sample datasets, 
+    Required inputs are the tax & survey, 
     and the absolute total (adult) population.
     See readme for more information.
     """
