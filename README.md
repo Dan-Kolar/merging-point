@@ -1,5 +1,5 @@
 # merging-point
-Implementation of the merging point algorithm from the paper Wealth Survey Calibration Using Income Tax Data.
+Implementation of the merging point algorithm from the paper [Wealth Survey Calibration Using Income Tax Data](https://ideas.repec.org/p/inq/inqwps/ecineq2023-659.html).
 
 ## Requirements
 
