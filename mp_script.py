@@ -2,8 +2,6 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker
 import pandas as pd
 import numpy as np
-import time
-import pickle
 import scipy.stats
 import scipy.integrate as integrate
 from sklearn import linear_model
