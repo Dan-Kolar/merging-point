@@ -47,12 +47,12 @@ def mp(tax,survey,pop_size=None,ts=0,inccol="income",weightcol="weight",gamma=3,
 
 
 
-########## 2. Running the function
+########## 2. Test on sample data
 
-tax=np.nan #upload tax data here
-survey=np.nan #upload survey data here
-pop_size=np.nan #specify population size
-grid_df,df_mp_c=mp(tax,survey,pop_size) #if needed, add more arguments inside the bracket (e.g. ts=0.6, other_mp=[0.98,0.96] etc.)
+tax=pd.read_excel("tax_sample.xlsx") #dataset has a trustable span from 0.8, but it is not necessary to specify this in the function
+survey=pd.read_csv("survey_sample.csv")
+pop_size=1000000
+grid_df,df_mp_c=mp(tax,survey,pop_size)
 print(df_mp_c)
 
 
