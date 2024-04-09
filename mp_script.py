@@ -20,7 +20,7 @@ from zz_paretowealth_code import *
 
 
 
-########## 1. The function
+########## 1. Defining the *mp* function
 
 def mp(tax,survey,pop_size=None,ts=0,inccol="income",weightcol="weight",gamma=3,beta=30,other_mp=[]):
     """
@@ -47,12 +47,12 @@ def mp(tax,survey,pop_size=None,ts=0,inccol="income",weightcol="weight",gamma=3,
 
 
 
-########## 2. Running the function
+########## 2. Uploading the data & calling the *mp* function
 
 tax=np.nan #upload tax data here
 survey=np.nan #upload survey data here
 pop_size=np.nan #specify population size
-grid_df,df_mp_c=mp(tax,survey,pop_size) #if needed, add more arguments inside the bracket (e.g. ts=0.6, other_mp=[0.98,0.96] etc.)
+grid_df,df_mp_c=mp(tax,survey,pop_size) #if needed, add more arguments inside the bracket (e.g., ts=0.6, other_mp=[0.98,0.96] etc.)
 print(df_mp_c)
 
 
