@@ -23,7 +23,7 @@ python mp_script.py
 * tax data in the form of an output file from the [Generalized Pareto interpolation](https://wid.world/gpinter/) (gpinter) programme; the tax distribution should be continuous
 * the total (adult) population size that is consistent with both the survey and the tax data
 
-Please adjust lines 52-54 in *mc_script.py* to upload the two datasets and specify the total population, and then run
+Please adjust lines 52-54 in *mp_script.py* to upload the two datasets and specify the total population, and then run
 
 ```python
 python mp_script.py
@@ -32,7 +32,7 @@ python mp_script.py
 
 ## Arguments
 
-Arguments can be specified on line 55 in *mc_script.py*
+Arguments can be specified on line 55 in *mp_script.py*
 
 |  Arguments   | Details  | Default value | 
 |  ----  | ----  | ----  |
