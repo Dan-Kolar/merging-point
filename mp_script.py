@@ -51,7 +51,8 @@ def mp(tax,survey,pop_size=None,ts=0,inccol="income",weightcol="weight",gamma=3,
 
 tax=pd.read_excel("tax_sample.xlsx") #dataset has a trustable span from 0.8, but it is not necessary to specify this in the function
 survey=pd.read_csv("survey_sample.csv")
-grid_df,df_mp_c=mp(tax,survey,pop_size=1000000)#ts=0.8
+pop_size=1000000
+grid_df,df_mp_c=mp(tax,survey,pop_size)#ts=0.8
 print(df_mp_c)
 
 
