@@ -12,10 +12,10 @@ The code was tested in Python versions 3.8.19 and 3.12.2. In case of issues, ver
 ## Run test
 
 ```python
-python mp_script.py
+python mp_script_test.py
 ```
 
-*mp_script.py* (as well as *mp_script_notebook.ipynb*) defines the *mp* function which outputs candidate merging points and a grid dataset to create graphs. The script includes a test simulation using simulated sample data.
+The script outputs candidate merging points (0.9, 0.83, 0.5) for the sample datasets survey_sample.csv and tax_sample.xlsx. It also outputs a graph comparing the survey and tax distributions, and a graph for each candidate merging point.
 
 ## Inputs
 
@@ -23,16 +23,17 @@ python mp_script.py
 * tax data in the form of an output file from the [Generalized Pareto interpolation](https://wid.world/gpinter/) (gpinter) programme; the tax distribution should be continuous
 * the total (adult) population size that is consistent with both the survey and the tax data
 
+
+
 Please adjust lines 52-54 in *mp_script.py* to upload the two datasets and specify the total population, and then run
 
 ```python
 python mp_script.py
 ```
 
+The *mp* function takes these three inputs and outputs candidate merging points and a grid dataset to create graphs. Additional arguments for the *mp* function can be specified on line 55 in *mp_script.py*.
 
 ## Arguments
-
-Arguments can be specified on line 55 in *mp_script.py*
 
 |  Arguments   | Details  | Default value | 
 |  ----  | ----  | ----  |
