@@ -49,8 +49,8 @@ def mp(tax,survey,pop_size=None,ts=0,inccol="income",weightcol="weight",gamma=3,
 
 ########## 2. Uploading the data & calling the *mp* function
 
-tax=np.nan #upload tax data here
-survey=np.nan #upload survey data here
+tax=pd.read_excel("tax_sample.xlsx") #replace with actual tax data
+survey=pd.read_csv("survey_sample.csv") #replace with actual survey data
 pop_size=np.nan #specify population size
 grid_df,df_mp_c=mp(tax,survey,pop_size) #if needed, add more arguments inside the bracket (e.g., ts=0.6, other_mp=[0.98,0.96] etc.)
 print(df_mp_c)
