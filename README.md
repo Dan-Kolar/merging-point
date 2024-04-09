@@ -31,6 +31,9 @@ python mp_script.py
 
 
 ## Arguments
+
+Arguments can be specified on line 55 in *mc_script.py*
+
 |  Arguments   | Details  | Default value | 
 |  ----  | ----  | ----  |
 | ts  | percentile from which tax data are considered reliable (trustable span); min:0, max:0.98 | 0 |
@@ -39,5 +42,3 @@ python mp_script.py
 | gamma | distance parameter gamma (see paper) | 3 |
 | beta | distance parameter beta (see paper) | 30 |
 | other_mp | list of additional percentiles to be included among candidate merging points | empty list |
-
-Arguments can be specified on line 55 in *mc_script.py*
